@@ -9,6 +9,7 @@ public class FuncionarioControleOperacional {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String responsavel;
 
@@ -17,12 +18,6 @@ public class FuncionarioControleOperacional {
     private String skill;
 
     public FuncionarioControleOperacional() {
-    }
-
-    public FuncionarioControleOperacional(String responsavel, String eMail, String skill) {
-        this.responsavel = responsavel;
-        this.eMail = eMail;
-        this.skill = skill;
     }
 
     public String getResponsavel() {

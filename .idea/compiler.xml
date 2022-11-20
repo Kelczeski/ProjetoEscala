@@ -10,11 +10,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="escola" target="11" />
       <module name="projetoescala" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="escola" options="-parameters" />
       <module name="projetoescala" options="-parameters" />
     </option>
   </component>

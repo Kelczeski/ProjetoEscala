@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+
 public class Operador {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,7 +20,7 @@ public class Operador {
     private String cpf;
 
     private String equipeSupervidorResponsavel;
-
+   @ManyToOne CalendarioEscala calendarioEscala;
     @OneToMany(mappedBy = "skill")
     private List<Operador> operador = new ArrayList<>();
     public Integer getId() {
@@ -61,4 +62,5 @@ public class Operador {
     public void setEquipeSupervidorResponsavel(String equipeSupervidorResponsavel) {
         this.equipeSupervidorResponsavel = equipeSupervidorResponsavel;
     }
+
 }

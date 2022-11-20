@@ -10,7 +10,7 @@ public interface OperadorRepository extends JpaRepository<Operador, Integer> {
 
     List<Operador> findBySkill(String skill);
 
-    List<Operador> findByEquipeSupervisor(String equipeSupervisor);
+    List<Operador> findByEquipeSupervisorResponsavel(String equipeSupervisor);
 
     Operador findByCpf(String cpf);
 
